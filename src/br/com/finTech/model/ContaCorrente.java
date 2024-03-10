@@ -1,15 +1,17 @@
 package br.com.finTech.model;
 
-public class ContaCorrente implements IConta {
+public class ContaCorrente extends Conta {
+
+
 	
 	
-
-	public void registrarTransacao() {
+	public ContaCorrente() {
 		
-	};
 
-	public void verSaldo() {
 		
-	};
+	}
+	
+
+	
 
 }

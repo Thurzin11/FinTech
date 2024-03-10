@@ -1,10 +1,10 @@
 package br.com.finTech.model;
 
-public class Transacao implements IConta{
+public class Transacao  {
 	
 	private Integer tipo;
-	private IConta contaDe;
-	private IConta contaPara;
+	private Conta contaDe;
+	private Conta contaPara;
 	private Double valor;
 
 	
@@ -15,10 +15,11 @@ public class Transacao implements IConta{
 		
 	}
 
-
+	
 	public Integer getTipo() {
 		return tipo;
 	}
+
 
 
 	public void setTipo(Integer tipo) {
@@ -26,24 +27,29 @@ public class Transacao implements IConta{
 	}
 
 
-	public IConta getContaDe() {
+
+	public Conta getContaDe() {
 		return contaDe;
 	}
 
 
-	public void setContaDe(IConta contaDe) {
+
+	public void setContaDe(Conta contaDe) {
 		this.contaDe = contaDe;
 	}
 
 
-	public IConta getContaPara() {
+
+	public Conta getContaPara() {
 		return contaPara;
 	}
 
 
-	public void setContaPara(IConta contaPara) {
+
+	public void setContaPara(Conta contaPara) {
 		this.contaPara = contaPara;
 	}
+
 
 
 	public Double getValor() {
@@ -51,13 +57,18 @@ public class Transacao implements IConta{
 	}
 
 
+
 	public void setValor(Double valor) {
 		this.valor = valor;
 	}
-	
+
+
+
 	public boolean efetuarTransacao() {
+		return false;
 		
 	}
+	
 	
 	public void verSaldo() {
 		
